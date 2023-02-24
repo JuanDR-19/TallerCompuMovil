@@ -4,12 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import org.json.JSONArray
 import org.json.JSONObject
-import java.io.BufferedReader
-import java.io.File
-import java.io.InputStream
-import java.io.InputStreamReader
+
 
 
 class MainActivity : AppCompatActivity() {
