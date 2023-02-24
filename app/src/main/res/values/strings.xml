@@ -1,4 +1,11 @@
 <resources>
+    <string-array name="Languages">
+        <item>Spanish</item>
+        <item>English</item>
+        <item>French</item>
+        <item>Japanese</item>
+        <item>Portuguese</item>
+    </string-array>
     <string name="app_name">Taller</string>
     <string name= "json_file_p">paises</string>
     <string name="nombre">Nombre</string>

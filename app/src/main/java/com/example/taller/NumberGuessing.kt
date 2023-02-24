@@ -12,6 +12,10 @@ fun randNum(Range: Int): Int {
     return Random.nextInt(Range + 1) // 0 inclusive
 }
 
+private fun play(){
+
+}
+
 class NumberGuessing : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,7 +44,7 @@ class NumberGuessing : AppCompatActivity() {
                 }
             } else {
                 counter++
-                counterText.text = "Counter: $counter"
+                counterText.text = "Counter: "
                 entryField.text=""
                 Toast.makeText(this, "Felicidades, consiguió adivinar el número en $counter intentos", Toast.LENGTH_LONG).show()
                 messageField.text= "Message: El valor $entryNumber es el número que tenia que adivinar"
