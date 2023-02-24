@@ -17,7 +17,6 @@ class NumberGuessing : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_number_guessing)
-
         var counter = 0
         val buttonPlay = findViewById<Button>(R.id.buttonPlay)
         val rangeText = findViewById<TextView>(R.id.range)
@@ -25,14 +24,11 @@ class NumberGuessing : AppCompatActivity() {
         val messageField = findViewById<TextView>(R.id.message)
         val numtarg = intent.getIntExtra("number", 0)
         var randomNumber = randNum(numtarg)
-
         rangeText.append(" $numtarg")
         counterText.append(" $counter")
-
         buttonPlay.setOnClickListener{
             val entryField = findViewById<TextView>(R.id.entry)
             val entryNumber = findViewById<TextView>(R.id.entry).text.toString().toInt()
-
             if(entryNumber != randomNumber){
                 entryField.text=""
                 counter++
