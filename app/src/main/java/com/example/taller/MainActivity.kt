@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         buttonSubmit.setOnClickListener{
             val result = numberObtained.text.toString()
             val numtarg = result.toInt()
-            if(numtarg in 0..100){
+            if(numtarg in 0..1000){
                 //send the number to the next activity
                 numberObtained.setText("")
                 val intent = Intent(this, NumberGuessing::class.java)

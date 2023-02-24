@@ -7,21 +7,23 @@
     tools:context=".NumberGuessing">
 
     <TextView
+        android:id="@+id/range"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/entrada"
-        android:text="Guess a number between 0 and ..."
+        app:layout_constraintBottom_toTopOf="@id/entry"
+        android:text="@string/guess_a_number_between_0_and"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:textColor="@color/purple_700"
-        android:textSize="20dp"
+        android:textSize="20sp"
         />
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/entrada"
+        android:id="@+id/entry"
+        android:inputType="number"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
-        android:hint="Number..."
+        android:hint="@string/number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -29,7 +31,7 @@
         app:layout_constraintVertical_bias="0.35" />
 
     <Button
-        android:id="@+id/botonPlay"
+        android:id="@+id/buttonPlay"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:text="@string/play"
@@ -37,24 +39,25 @@
         android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/entrada"
+        app:layout_constraintTop_toBottomOf="@+id/entry"
         />
 
     <TextView
         android:id="@+id/counter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/botonPlay"
+        app:layout_constraintTop_toBottomOf="@id/buttonPlay"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintVertical_bias="0.2"
-        android:text="Counter: ..."
+        android:text="@string/counter"
         android:textColor="@color/purple_700"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
 
     <TextView
+        android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,7 +66,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintVertical_bias="0.1"
-        android:text="Message: ..."
+        android:text="@string/message"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

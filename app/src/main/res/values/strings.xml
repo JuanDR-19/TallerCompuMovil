@@ -4,8 +4,12 @@
     <string name="ir">Ir</string>
     <string name="taller1">Taller1</string>
     <string name="guess_game">GUESS GAME</string>
-    <string name="_0_100">0-100</string>
+    <string name="_0_100">0-1000</string>
     <string name="random_greet">random Greet</string>
     <string name="countries">Countries</string>
     <string name="play">PLAY</string>
+    <string name="counter">Counter:</string>
+    <string name="message">Message:</string>
+    <string name="number">Number...</string>
+    <string name="guess_a_number_between_0_and">Guess a number between 0 and</string>
 </resources>
