@@ -52,13 +52,30 @@ class MainActivity : AppCompatActivity() {
         /*
         Create a code for launching a toast greeting the user in the languaje selected in the spinner
          */
+        Toast.makeText(this, language, Toast.LENGTH_LONG).show()
     }
 
-    private fun spinnerSelection():String{
+    private fun spinnerSelection(lenguaje:String):String{
         //TODO
         //get the arguments selected in the spinner and return a string value that will go as an argument
         //in the multiLandGreeting fun
-        return ""
+        var mensaje:String = "prueba"
+        if(lenguaje == "Spanish"){
+            mensaje = getString(R.string.Spanish)
+        }
+        else if(lenguaje == "English"){
+            mensaje = getString(R.string.English)
+        }
+        else if(lenguaje == "French"){
+            mensaje = getString(R.string.French)
+        }
+        else if(lenguaje == "Japanese"){
+            mensaje = getString(R.string.Japanese)
+        }
+        else if(lenguaje == "Portuguese"){
+            mensaje = getString(R.string.Portuguese)
+        }
+        return mensaje;
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -78,7 +95,8 @@ class MainActivity : AppCompatActivity() {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
         buttonGreeting.setOnClickListener{
-            multiLangGreeting(spinnerSelection())
+            var lenguaje = spinner.getSelectedItem().toString()
+            multiLangGreeting(spinnerSelection(lenguaje))
         }
     }
 }

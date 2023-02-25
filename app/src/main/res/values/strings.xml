@@ -6,6 +6,11 @@
         <item>Japanese</item>
         <item>Portuguese</item>
     </string-array>
+    <string name="Spanish">Buen dia!</string>
+    <string name="English">Good morning!</string>
+    <string name="French">Bonjour!</string>
+    <string name="Japanese">こんにちは!</string>
+    <string name="Portuguese">Bom dia!</string>
     <string name="app_name">Taller</string>
     <string name= "json_file_p">paises</string>
     <string name="nombre">Nombre</string>
