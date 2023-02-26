@@ -47,6 +47,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun intentCountry(){
+        val intent = Intent(this,ListaDePaises::class.java)
+        startActivity(intent)
+    }
+
     private fun multiLangGreeting(language:String){
         //TODO
         /*
@@ -97,6 +102,10 @@ class MainActivity : AppCompatActivity() {
         buttonGreeting.setOnClickListener{
             var lenguaje = spinner.getSelectedItem().toString()
             multiLangGreeting(spinnerSelection(lenguaje))
+        }
+
+        buttonCountries.setOnClickListener {
+            intentCountry()
         }
     }
 }
