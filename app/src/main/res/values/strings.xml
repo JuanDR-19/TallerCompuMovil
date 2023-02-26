@@ -6,13 +6,42 @@
         <item>Japanese</item>
         <item>Portuguese</item>
     </string-array>
+
+    <string-array name="Paises">
+        <item>Alemania</item>
+        <item>Argentina</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Bélgica</item>
+        <item>Bolívia</item>
+        <item>Brasil</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Cuba</item>
+        <item>Ecuador</item>
+        <item>España</item>
+        <item>Estados Unidos</item>
+        <item>Francia</item>
+        <item>Reino Unido</item>
+        <item>Grecia</item>
+        <item>Holanda</item>
+        <item>Hungria</item>
+        <item>Irlanda</item>
+        <item>Islandia</item>
+        <item>Israel</item>
+        <item>Italia</item>
+        <item>Japón</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
+
     <string name="Spanish">Buen dia!</string>
     <string name="English">Good morning!</string>
     <string name="French">Bonjour!</string>
     <string name="Japanese">こんにちは!</string>
     <string name="Portuguese">Bom dia!</string>
     <string name="app_name">Taller</string>
-    <string name= "json_file_p">paises</string>
+    <string name="json_file_p">paises</string>
     <string name="nombre">Nombre</string>
     <string name="ir">Ir</string>
     <string name="taller1">Taller1</string>
@@ -25,4 +54,5 @@
     <string name="message">Message:</string>
     <string name="number">Number...</string>
     <string name="guess_a_number_between_0_and">Guess a number between 0 and</string>
+    <string name="Ver">Ver info</string>
 </resources>
