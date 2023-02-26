@@ -16,24 +16,6 @@ class MainActivity : AppCompatActivity() {
         val name_int: String,
         val initials: String
     )
-    private fun readJSON(): ArrayList<country> {
-        val inputStream = resources.openRawResource(R.raw.paises)
-        val jsonString = inputStream.bufferedReader().use { it.readText() }
-        val json = JSONObject(jsonString)
-        val countries = json.getJSONArray("paises")
-        val countriesList = ArrayList<country>()
-
-        for (i in 0 until countries.length()) {
-            val country = countries.getJSONObject(i)
-            val capital = country.getString("capital")
-            val countryName = country.getString("nombre_pais")
-            val countryNameInt = country.getString("nombre_pais_int")
-            val initials = country.getString("sigla")
-            var obt = country(capital,countryName,countryNameInt,initials)
-            countriesList.add(obt)
-        }
-        return countriesList
-    }
     private fun changeintent(numtarg:Int, numberObtained:EditText){
         if(numtarg in 0..1000){
             //send the number to the next activity
@@ -53,17 +35,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun multiLangGreeting(language:String){
-        //TODO
-        /*
-        Create a code for launching a toast greeting the user in the languaje selected in the spinner
-         */
         Toast.makeText(this, language, Toast.LENGTH_LONG).show()
     }
 
     private fun spinnerSelection(lenguaje:String):String{
-        //TODO
-        //get the arguments selected in the spinner and return a string value that will go as an argument
-        //in the multiLandGreeting fun
+
         var mensaje:String = "prueba"
         if(lenguaje == "Spanish"){
             mensaje = getString(R.string.Spanish)
@@ -103,7 +79,6 @@ class MainActivity : AppCompatActivity() {
             var lenguaje = spinner.getSelectedItem().toString()
             multiLangGreeting(spinnerSelection(lenguaje))
         }
-
         buttonCountries.setOnClickListener {
             intentCountry()
         }
