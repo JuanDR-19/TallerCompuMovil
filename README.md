@@ -5,4 +5,6 @@
 - Andrés Felipe Alarcon
 - German Andres Velasco
 
-# link del video: ...
+# link del video: 
+https://youtu.be/YBz73SQVdTE
+
